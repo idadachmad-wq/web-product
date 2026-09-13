@@ -33,8 +33,9 @@ export default function TerhubungPage() {
           Selamat terhubung ke {site.name}
         </h1>
         <p className="mt-4 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-          Internet sudah aktif. Silakan browsing, streaming, atau lihat paket
-          bulanan & voucher lainnya. Butuh bantuan? Chat admin kapan saja.
+          Internet sudah aktif. Halaman ini tetap terbuka sampai Anda pindah
+          sendiri. Silakan browsing, streaming, atau lihat paket & voucher —
+          butuh bantuan? Chat admin kapan saja.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
