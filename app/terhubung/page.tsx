@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Selamat terhubung",
-  description: `Login voucher berhasil. Internet ${site.name} sudah aktif — lanjut ke beranda, produk, atau hubungi admin.`,
+  title: "Berhasil terhubung",
+  description: `Login voucher berhasil. Internet ${site.name} sudah aktif.`,
   robots: { index: false, follow: true },
 };
 
@@ -30,38 +28,11 @@ export default function TerhubungPage() {
           Login voucher berhasil
         </p>
         <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-          Selamat terhubung ke {site.name}
+          Berhasil terhubung ke {site.name}
         </h1>
         <p className="mt-4 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
-          Internet sudah aktif. Halaman ini tetap terbuka sampai Anda pindah
-          sendiri. Silakan browsing, streaming, atau lihat paket & voucher —
-          butuh bantuan? Chat admin kapan saja.
-        </p>
-
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <Link
-            href="/"
-            className="rounded-md bg-accent px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90"
-          >
-            Ke beranda
-          </Link>
-          <Link
-            href="/produk"
-            className="rounded-md border border-border bg-surface px-5 py-3 text-sm font-semibold text-foreground transition hover:bg-mist/60"
-          >
-            Lihat paket & voucher
-          </Link>
-          <WhatsAppButton
-            label="Chat admin"
-            message={`Halo ${site.name}! Saya baru saja login voucher dan butuh bantuan.`}
-            variant="secondary"
-          />
-        </div>
-
-        <p className="mt-10 max-w-md text-xs leading-relaxed text-muted">
-          Tip: jendela status sesi hotspot (jika terbuka) bisa dipakai untuk
-          cek sisa waktu atau logout. Jangan ditutup jika Anda ingin memantau
-          sesi.
+          Internet sudah aktif. Silakan lanjut browsing lewat menu di atas —
+          halaman ini tetap terbuka sampai Anda pindah sendiri.
         </p>
       </div>
     </div>
